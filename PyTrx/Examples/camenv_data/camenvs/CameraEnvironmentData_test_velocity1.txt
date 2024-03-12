@@ -1,23 +1,23 @@
-### KRONEBREEN CAMERA 1 (2014) camera environment data
+### CAM5 camera environment data
  
 ### FORMAT: Camera environment name, GCP path, DEM path, Image path, 
 ### Calibration path, Camera location, Yaw pitch roll
 
 
 Camera_environment_name # Name of CamEnv class
-KR1_2014
+CAM5
 
 
 GCP_path #Path name where Ground Control Point data can be found
-../Examples/camenv_data/gcps/KR1_2014.txt
+../Examples/camenv_data/gcps/CAM5.txt
 
 
 DEM_path #Path name where DEM data can be found
-../Examples/camenv_data/dem/KR_demzero.tif
+../Examples/camenv_data/dem/DEM_depotNNE_07cm_absolute_2023_09_27.tif
 
 
 image_path #Path name where master image can be found (i.e. calibration image where GCPs have been plotted)
-../Examples/camenv_data/refimages/23_07150870.JPG
+../Examples/camenv_data/refimages/23_11290600.JPG
 
 
 Calibration_path #Path name where camera calibration file can be found
@@ -25,12 +25,13 @@ Calibration_path #Path name where camera calibration file can be found
 
 
 Camera_location #Location of camera in xyz coordinates
-[447618.893 8759606.114 410.523]
+[4411780.456 543179.736 4562664.233]
 
 
 Yaw_pitch_roll #Yaw, pitch, roll of camera (estimate yaw viewing angle if YPR is unknown e.g. [180 0 0]) 
-[4.730300136214725 0.092484215880113 0.139160869764923] 
+[236 3 5] 
 
 
 Dem_densification #Amount to densify the DEM to permit better mapping of image
 2
+
