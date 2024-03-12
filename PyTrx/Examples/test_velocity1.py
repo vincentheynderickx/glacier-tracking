@@ -80,7 +80,9 @@ hgmind=5.0                      #Minimum distance between seeded points
 hgminf=4                        #Minimum number of seeded points to track
 
 #Set up Homography object
-homog = Homography(camimgs, cameraenvironment, caminvmask, calibFlag=True, 
+#homog = Homography(camimgs, cameraenvironment, caminvmask, calibFlag=True, band='L', equal=True)
+
+homog = Homography(camimgs, cameraenvironment, None, calibFlag=True, 
                 band='L', equal=True)
 
 #Calculate homography
@@ -100,7 +102,9 @@ mdis = 5.0                      #Minimum distance between seeded points
 mfeat = 4                       #Minimum number of seeded points to track
 
 #Set up Velocity object
-velo=Velocity(camimgs, cameraenvironment, hgout, camvmask, calibFlag=True, 
+#velo=Velocity(camimgs, cameraenvironment, hgout, camvmask, calibFlag=True,  band='L', equal=True) 
+
+velo=Velocity(camimgs, cameraenvironment, hgout, None, calibFlag=True, 
               band='L', equal=True) 
 
 velocities = velo.calcVelocities([vmethod, [mpt, ql, mdis], [vwinsize, bk, 
