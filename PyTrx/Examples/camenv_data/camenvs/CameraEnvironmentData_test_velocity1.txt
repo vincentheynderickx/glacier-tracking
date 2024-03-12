@@ -25,7 +25,7 @@ Calibration_path #Path name where camera calibration file can be found
 
 
 Camera_location #Location of camera in xyz coordinates
-[4411780.456 543179.736 4562664.233]
+[1011242.816 6545738.756 2850.000]
 
 
 Yaw_pitch_roll #Yaw, pitch, roll of camera (estimate yaw viewing angle if YPR is unknown e.g. [180 0 0]) 
