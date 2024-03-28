@@ -1,25 +1,3 @@
-'''
-PyTrx (c) is licensed under a MIT License.
-
-You should have received a copy of the license along with this
-work. If not, see <https://choosealicense.com/licenses/mit/>.
-
-
-PYTRX EXAMPLE SPARSE VELOCITY DRIVER
-
-This script is part of PyTrx, an object-oriented programme created for the 
-purpose of calculating real-world measurements from oblique images and 
-time-lapse image series.
-
-This driver calculates sparse surface velocities using modules in PyTrx at 
-Kronebreen, Svalbard, for a subset of the images collected during the 2014 melt 
-season. Specifically this script performs feature-tracking through sequential 
-daily images of the glacier to derive surface velocities (spatial average, 
-individual point displacements and interpolated velocity maps) which have been 
-corrected for image distortion and motion in the camera platform (i.e. image
-registration).
-'''
-
 #Import packages
 import os, sys
 import numpy as np
@@ -103,7 +81,6 @@ mfeat = 4                       #Minimum number of seeded points to track
 
 #Set up Velocity object
 #velo=Velocity(camimgs, cameraenvironment, hgout, camvmask, calibFlag=True,  band='L', equal=True) 
-
 velo=Velocity(camimgs, cameraenvironment, hgout, None, calibFlag=True, 
               band='L', equal=True) 
 
@@ -165,7 +142,6 @@ cameraMatrix=cameraenvironment.getCamMatrixCV2()
 distortP=cameraenvironment.getDistortCoeffsCV2() 
 dem=cameraenvironment.getDEM()
 imgset=velo._imageSet
-
 #Cycle through data from image pairs   
 for i in range(len(imn)-1):
 
